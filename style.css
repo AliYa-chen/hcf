@@ -9,35 +9,35 @@
   --system-purple: #AF52DE;
   --system-pink: #FF2D92;
   --system-teal: #5AC8FA;
-  
+
   /* 语义化颜色 - 明亮模式 */
   --label-primary: #000000;
   --label-secondary: #3C3C43;
   --label-tertiary: #3C3C4399;
   --label-quaternary: #3C3C434D;
-  
+
   --fill-primary: #78788014;
   --fill-secondary: #78788028;
   --fill-tertiary: #7676803D;
   --fill-quaternary: #74748052;
-  
+
   --background-primary: #FFFFFF;
   --background-secondary: #F2F2F7;
   --background-tertiary: #FFFFFF;
-  
+
   --grouped-background-primary: #F2F2F7;
   --grouped-background-secondary: #FFFFFF;
   --grouped-background-tertiary: #F2F2F7;
-  
+
   --separator: #3C3C4349;
   --opaque-separator: #C6C6C8;
-  
+
   /* 状态指示颜色 */
   --success: var(--system-green);
   --warning: var(--system-orange);
   --error: var(--system-red);
   --info: var(--system-blue);
-  
+
   /* 阴影 */
   --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
   --shadow-medium: 0 4px 14px rgba(0, 0, 0, 0.15);
@@ -56,37 +56,40 @@
     --system-purple: #BF5AF2;
     --system-pink: #FF375F;
     --system-teal: #64D2FF;
-    
+
     /* 语义化颜色 - 暗色模式 */
     --label-primary: #FFFFFF;
     --label-secondary: #EBEBF5;
     --label-tertiary: #EBEBF599;
     --label-quaternary: #EBEBF54D;
-    
+
     --fill-primary: #7676801C;
     --fill-secondary: #78788033;
     --fill-tertiary: #7676804A;
     --fill-quaternary: #78788066;
-    
+
     --background-primary: #000000;
     --background-secondary: #1C1C1E;
     --background-tertiary: #2C2C2E;
-    
+
     --grouped-background-primary: #000000;
     --grouped-background-secondary: #1C1C1E;
     --grouped-background-tertiary: #2C2C2E;
-    
+
     --separator: #54545899;
     --opaque-separator: #38383A;
-    
+
     /* 暗色模式阴影 */
     --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.3);
     --shadow-medium: 0 4px 14px rgba(0, 0, 0, 0.4);
     --shadow-heavy: 0 8px 24px rgba(0, 0, 0, 0.5);
   }
 }
+
 /* 重置和基础样式 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -160,6 +163,7 @@ body {
     gap: 32px;
   }
 }
+
 /* iOS 风格卡片设计 */
 .info-card {
   background-color: var(--grouped-background-secondary);
@@ -280,11 +284,14 @@ body {
 }
 
 @keyframes tamperPulse {
-  0%, 100% { 
+
+  0%,
+  100% {
     border-color: rgba(255, 59, 48, 0.5);
     box-shadow: 0 4px 14px rgba(255, 59, 48, 0.15);
   }
-  50% { 
+
+  50% {
     border-color: rgba(255, 59, 48, 0.8);
     box-shadow: 0 8px 24px rgba(255, 59, 48, 0.3);
   }
@@ -301,7 +308,9 @@ body {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* 信息列表 */
@@ -407,13 +416,14 @@ body {
   overflow: hidden;
 }
 
-.score-bar > span {
+.score-bar>span {
   display: block;
   height: 100%;
   background-color: var(--system-blue);
   border-radius: 3px;
   transition: width 0.3s ease;
 }
+
 /* 步骤列表 */
 .step-list {
   list-style: none;
@@ -511,7 +521,8 @@ code {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  min-height: 44px; /* iOS 最小触摸目标 */
+  min-height: 44px;
+  /* iOS 最小触摸目标 */
   padding: 12px 20px;
   border-radius: 12px;
   font-size: 17px;
@@ -639,42 +650,42 @@ code {
   .app-container {
     padding-inline: 16px;
   }
-  
+
   .nav-title {
     font-size: 28px;
   }
-  
+
   .nav-subtitle {
     font-size: 15px;
   }
-  
+
   .card-title {
     font-size: 20px;
   }
-  
+
   .card-header {
     padding: 16px 16px 0 16px;
   }
-  
+
   .card-body {
     padding: 12px 16px 16px 16px;
   }
-  
+
   .info-row {
     grid-template-columns: 1fr;
     gap: 6px;
     text-align: left;
   }
-  
+
   .info-row dd {
     text-align: left;
     font-weight: 400;
   }
-  
+
   .progress-container {
     justify-content: flex-start;
   }
-  
+
   .progress-track {
     width: 100%;
   }
@@ -685,31 +696,32 @@ code {
   .content-grid {
     gap: 16px;
   }
-  
+
   .info-card {
     border-radius: 12px;
   }
-  
+
   .status-indicator {
     padding: 10px 14px;
     font-size: 14px;
   }
-  
+
   .step-item {
     padding: 12px;
   }
-  
+
   .btn {
-    min-height: 48px; /* 更大的触摸目标 */
+    min-height: 48px;
+    /* 更大的触摸目标 */
     padding: 14px 20px;
     font-size: 16px;
   }
-  
+
   .btn-group {
     flex-direction: column;
     gap: 8px;
   }
-  
+
   .btn-group .btn {
     width: 100%;
   }
@@ -721,23 +733,23 @@ code {
     padding-inline: 32px;
     padding-block: 32px 32px;
   }
-  
+
   .nav-title {
     font-size: 40px;
   }
-  
+
   .content-grid {
     gap: 24px;
   }
-  
+
   .card-header {
     padding: 24px 24px 0 24px;
   }
-  
+
   .card-body {
     padding: 20px 24px 24px 24px;
   }
-  
+
   .info-row {
     grid-template-columns: 160px 1fr;
   }
@@ -749,31 +761,32 @@ code {
     padding-inline: 40px;
     padding-block: 40px 40px;
   }
-  
+
   .content-grid {
     grid-template-columns: 1.2fr 1fr;
     gap: 32px;
   }
-  
+
   .primary-card {
     order: 1;
   }
-  
+
   .secondary-card {
     order: 2;
   }
 }
 
 /* 高分辨率显示优化 */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
   .info-card {
     border-width: 0.5px;
   }
-  
+
   .step-badge {
     border-width: 0.5px;
   }
-  
+
   .mono-text {
     border-width: 0.5px;
   }
@@ -786,15 +799,15 @@ code {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-  
+
   .status-indicator.loading::before {
     animation: none;
   }
-  
+
   .btn.loading::before {
     animation: none;
   }
-  
+
   /* 禁用所有模糊效果以提高性能 */
   .big-message-card,
   #webgl-container {
@@ -808,15 +821,15 @@ code {
     --separator: #000000;
     --opaque-separator: #000000;
   }
-  
+
   .info-card {
     border-width: 2px;
   }
-  
+
   .step-badge {
     border-width: 2px;
   }
-  
+
   .btn {
     border-width: 2px;
   }
@@ -837,11 +850,11 @@ code {
     border: 1px solid #000;
     break-inside: avoid;
   }
-  
+
   .btn {
     display: none;
   }
-  
+
   .status-indicator.loading::before {
     display: none;
   }
@@ -883,31 +896,57 @@ code {
 }
 
 @keyframes dm-fall {
-  from { 
+  from {
     transform: translateY(-60px);
     opacity: 0;
   }
+
   10% {
     opacity: 0.9;
   }
+
   90% {
     opacity: 0.9;
   }
-  to { 
+
+  to {
     transform: translateY(110vh);
     opacity: 0;
   }
 }
 
 /* iOS 风格颜色池 - 增强对比度以补偿移除的模糊效果 */
-.danmu.c1 { color: var(--system-red); }
-.danmu.c2 { color: var(--system-orange); }
-.danmu.c3 { color: var(--system-green); }
-.danmu.c4 { color: var(--system-blue); }
-.danmu.c5 { color: var(--system-purple); }
-.danmu.c6 { color: var(--system-yellow); }
-.danmu.c7 { color: var(--system-teal); }
-.danmu.c8 { color: var(--system-pink); }
+.danmu.c1 {
+  color: var(--system-red);
+}
+
+.danmu.c2 {
+  color: var(--system-orange);
+}
+
+.danmu.c3 {
+  color: var(--system-green);
+}
+
+.danmu.c4 {
+  color: var(--system-blue);
+}
+
+.danmu.c5 {
+  color: var(--system-purple);
+}
+
+.danmu.c6 {
+  color: var(--system-yellow);
+}
+
+.danmu.c7 {
+  color: var(--system-teal);
+}
+
+.danmu.c8 {
+  color: var(--system-pink);
+}
 
 /* ===== 大字卡片效果 ===== */
 .big-message-card {
@@ -919,10 +958,9 @@ code {
   min-height: 50vh;
   margin-top: 0;
   grid-column: 1 / -1;
-  background: linear-gradient(135deg, 
-    color-mix(in srgb, var(--system-blue) 5%, transparent),
-    color-mix(in srgb, var(--system-purple) 5%, transparent)
-  );
+  background: linear-gradient(135deg,
+      color-mix(in srgb, var(--system-blue) 5%, transparent),
+      color-mix(in srgb, var(--system-purple) 5%, transparent));
   border-radius: 20px;
   border: 1px solid var(--separator);
   backdrop-filter: blur(20px);
@@ -936,10 +974,9 @@ code {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 50%, 
-    color-mix(in srgb, var(--system-blue) 8%, transparent) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(circle at 50% 50%,
+      color-mix(in srgb, var(--system-blue) 8%, transparent) 0%,
+      transparent 70%);
   pointer-events: none;
 }
 
@@ -1129,33 +1166,69 @@ code {
   height: 6px;
 }
 
-.primary-card .progress-fill { border-radius: 3px; }
+.primary-card .progress-fill {
+  border-radius: 3px;
+}
 
 /* 评分行更紧凑 */
-.primary-card .score-display { gap: 6px; }
-.primary-card .score-row { gap: 8px; font-size: 12px; }
-.primary-card .score-label { min-width: 52px; }
-.primary-card .score-bar { height: 4px; border-radius: 2px; }
-.primary-card .score-bar > span { border-radius: 2px; }
+.primary-card .score-display {
+  gap: 6px;
+}
+
+.primary-card .score-row {
+  gap: 8px;
+  font-size: 12px;
+}
+
+.primary-card .score-label {
+  min-width: 52px;
+}
+
+.primary-card .score-bar {
+  height: 4px;
+  border-radius: 2px;
+}
+
+.primary-card .score-bar>span {
+  border-radius: 2px;
+}
 
 /* 小屏进一步压缩 */
 @media (max-width: 390px) {
-  .primary-card .card-header { padding: 8px 10px 0 10px; }
-  .primary-card .card-body { padding: 6px 10px 10px 10px; }
-  .primary-card .status-indicator { font-size: 12px; min-height: 30px; }
-  .primary-card .info-row { gap: 6px; }
+  .primary-card .card-header {
+    padding: 8px 10px 0 10px;
+  }
+
+  .primary-card .card-body {
+    padding: 6px 10px 10px 10px;
+  }
+
+  .primary-card .status-indicator {
+    font-size: 12px;
+    min-height: 30px;
+  }
+
+  .primary-card .info-row {
+    gap: 6px;
+  }
 }
 
 /* ---------- 定向对齐需求 ---------- */
 /* 检测结果字段（值）居中 */
 .primary-card #osName {
-  text-align: center !important; /* 覆盖全局 dd 的右对齐及小屏左对齐 */
+  text-align: center !important;
+  /* 覆盖全局 dd 的右对齐及小屏左对齐 */
   justify-self: center;
 }
 
 /* 置信度进度条撑满 */
-.primary-card .progress-container { width: 100%; }
-.primary-card .progress-track { width: 100%; }
+.primary-card .progress-container {
+  width: 100%;
+}
+
+.primary-card .progress-track {
+  width: 100%;
+}
 
 /* 系统评分右侧数值居中（覆盖内联样式） */
 .primary-card .score-row .mono-text {
