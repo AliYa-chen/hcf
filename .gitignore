@@ -88,3 +88,5 @@ sw.*
 
 .output
 
+# 忽略自动生成的 env.js 文件
+public/env.js
