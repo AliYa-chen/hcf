@@ -1,0 +1,11 @@
+{
+	"name": "hcf",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"prebuild": "node scripts/gen-env.js",
+		"build": "echo 构建完成",
+		"predev": "node scripts/gen-env.js",
+		"dev": "echo 开发模式"
+	}
+}
